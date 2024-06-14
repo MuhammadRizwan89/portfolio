@@ -1,0 +1,366 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url("./assets/fonts/Philosopher-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Philosopher-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("./assets/fonts/Philosopher-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Philosopher-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  font-family: Poppins;
+  font-family: Philosopher;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background-color: #000;
+}
+.contactScroll {
+  display: flex;
+  align-items: center;
+}
+div#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 100vh;
+}
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.mainPage {
+  
+}
+/* ........................Header start.......................... */
+
+.abc {
+  padding: 1.5rem 2rem;
+  border-bottom-left-radius: 48px;
+  position: relative;
+  border-bottom-right-radius: 48px;
+}
+.abc::before,
+.abc::after {
+  content: "";
+  position: absolute;
+  height: 29px;
+  width: 94px;
+  background-color: #0c0a09;
+  top: 25px;
+  left: -37px;
+  z-index: 999;
+  transform: rotate(57deg);
+  border-bottom-right-radius: 56px;
+}
+.abc::after {
+  right: -37px;
+  z-index: 999;
+  transform: rotate(303deg);
+  border-bottom-left-radius: 56px;
+  background-color: #0c0a09;
+  left: inherit;
+  border-bottom-right-radius: 0;
+}
+.titleName h1 {
+  font-family: "Philosopher";
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.bannerTextPoint {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+.banner {
+  border-radius: 20px;
+  background: #fcf9ce;
+  margin: 15px;
+}
+.bannerParis {
+  font-weight: 600;
+  font-size:clamp(12px , 2vw , 40px);
+}
+.barSetting{
+position: absolute;
+width: 100%;
+margin-top: 33px;
+}
+section.home {
+  margin-bottom: auto;
+}
+/* ........................Header end.......................... */
+
+/* .................................................. */
+.active {
+  color: rgb(226, 15, 163);
+}
+.forward {
+  padding: 10px;
+  background-color: rgb(173, 22, 133);
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+}
+.rewind {
+  padding: 10px;
+  background-color: black;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* ...................Footer start.................... */
+.footer {
+  background-color: #000;
+  color: #ffff;
+  padding: 20px;
+}
+.footerbtn-social > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footerbtn-social ul li a {
+  padding: 6px 15px;
+  background-color: #000;
+  color: #fcf9ce;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid gray;
+}
+.footerbtn-social ul li a:hover {
+  background-color: #fcf9ce;
+  font-weight: 700;
+  color: #000;
+}
+.footer-policy {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: start;
+  gap: 5%;
+}
+.footer-policy > span {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.policy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  width: 30px;
+  height: 35px;
+  font-size: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  transform: translateY(5px);
+}
+.bottom-policy {
+  display: flex;
+  gap: 35px;
+  font-size: 12px;
+}
+.footer-24 > span {
+  font-size: 12px;
+}
+
+/* ...................Footer end.................... */
+
+/* ...................Home start.................... */
+.contactIcon > img {
+  width: 25px;
+  height: 25px;
+}
+.bannerTextSocialIcons > ul > li > a > img {
+  width: 17px;
+  filter: invert(94%) sepia(16%) saturate(5342%) hue-rotate(302deg)
+    brightness(136%) contrast(136%);
+}
+.bannerTextHeading h1 {
+  font-size: clamp(27px, 9vw, 200px);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+}
+.bannerTextSocialIcons > ul > li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #000;
+}
+.contactScroll img {
+  width: 40%;
+  transform: rotate(225deg);
+}
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialMediaContactSec {
+  position: relative;
+}
+
+.bannerTextFollow > img {
+  width: 6%;
+  transform: rotate(225deg);
+  position: absolute;
+  top: 207px;
+}
+.bannerTextFollow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bannerTextFollow span {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.contactSec {
+  position: relative;
+}
+.contactSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 44%;
+  position: absolute;
+  top: 56%;
+  left: -30%;
+  transform: rotate(90deg) translateY(-50%);
+}
+.contactSec.right-as {
+  left: inherit;
+  right: -23%;
+}
+.contactScroll > span {
+  margin-right: 3rem;
+}
+.contactScroll img {
+  transform: rotate(135deg);
+  height: auto;
+  width: 70px;
+}
+.contactIcon > img {
+  width: 25px;
+  height: 25px;
+  transform: rotate(-90deg);
+}
+.bannerText {
+  position: relative;
+}
+.socialMediaContactSec ul li a > img {
+  height: 15px;
+  width: 15px;
+  transform: rotate(-90deg);
+  filter: invert(90%) sepia(30%) saturate(389%) hue-rotate(328deg)
+    brightness(111%) contrast(98%);
+}
+.socialMediaContactSec ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.socialMediaContactSec ul {
+  display: flex;
+}
+.main_bner {
+  padding: 15rem 0;
+}
+/* ...................Home end.................... */
+
+/* ...................Aboutus section start.................... */
+.aboutMe{
+  padding:5rem 0 ;
+}
+
+/* ...................Aboutus section end.................... */
+/* globe componenet styling */
+span.hdingbtn {
+  display: inline-block;
+  background: transparent;
+  padding: 4px 27px;
+  border-radius: 40px;
+  border: 2px solid #fcf9ce;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.main_heading > h2 {
+  color: #fff;
+  font-size: clamp(1.4vw, 4vw, 1.8rem);
+  text-align: right;
+  font-weight: 600;
+  word-spacing: 2px;
+  text-indent: 27%;
+}
+.about_hd.main_heading {display: flex;flex-direction: column;align-items: center;}
+.about_hd.main_heading > h2 {text-align: center;text-indent: inherit;}
+.about_hd.main_heading > span {margin-bottom: 2rem;}

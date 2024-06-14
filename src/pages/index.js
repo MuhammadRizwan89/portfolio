@@ -1,0 +1,9 @@
+export { default as Home} from "./Home";
+export { default as About} from "./About";
+export { default as Service} from "./Services";
+export { default as Errorpage} from "./Errorpage";
+export { default as SharedLayout} from "../layout/SharedLayout";
+export { default as Clients} from "./Clients";
+export { default as Portfolio} from "./Portfolio";
+export { default as Insights} from "./Insights";
+export { default as Pricing} from "./Pricing";

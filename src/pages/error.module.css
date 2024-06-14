@@ -1,0 +1,16 @@
+.image_error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+}.image_error > img{
+    height: 400px;
+    width: 500px;
+}
+@media screen and (max-width:575px) {
+    .image_error > img{
+        height: 200px;
+        width: 200px;
+    }
+}
