@@ -7,7 +7,7 @@ import instagram from "/images/Baner/instagram.png";
 import twitter from "/images/Baner/twitter.png";
 import linkedin from "/images/Baner/linkedin.svg";
 import arrow from "/images/Baner/arrow.png";
-import {SectionHding } from "../components/Globle";
+import {SectionHding,SkillCounter } from "../components/Globle";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -74,17 +74,25 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div classNameName="col-span-1"></div>
+              <div className="col-span-1"></div>
             </div>
           </div>
         </div>
       </section>
-      <section className="aboutMe">
+      <section className="aboutMe py-5">
           <div className="container mx-auto px-3 sm:px-[2rem] md:px-[4rem] lg:px-[8rem]">
             <div className="aboutMe_1">
              <SectionHding newclass="about_hd" extr="section-heading" btntext="About Me" 
              sechdingtext="Hello world! I'm Rizwan Saeed, a 3D & motion designer Based in France. I enjoy creating meaningful narratives through motion graphics and experimenting with new technology to convey stories."
                />
+               <div className="max-w-[1536px] grid gap-x-[3rem] place-items-center grid-cols-[repeat(auto-fit,100%)]">
+               <div className=" col-span-10 sm:col-span-6 md:col-span-4 lg:col-span-3"><SkillCounter /></div>
+               <div className=" col-span-10 sm:col-span-6 md:col-span-4 lg:col-span-3"><SkillCounter /></div>
+               <div className=" col-span-10 sm:col-span-6 md:col-span-4 lg:col-span-3"><SkillCounter /></div>
+               <div className=" col-span-10 sm:col-span-6 md:col-span-4 lg:col-span-3"><SkillCounter /></div>
+              
+               </div>
+               
             </div>
           </div>
       </section>

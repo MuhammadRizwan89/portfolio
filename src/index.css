@@ -81,9 +81,7 @@ nav {
   top: 0;
   width: 100%;
 }
-.mainPage {
-  
-}
+
 /* ........................Header start.......................... */
 
 .abc {
@@ -209,6 +207,7 @@ section.home {
   bottom: 20px;
   right: 90px;
   transform: translateY(5px);
+  background-color: #fcf9ce;
 }
 .bottom-policy {
   display: flex;
@@ -342,7 +341,7 @@ section.home {
 }
 
 /* ...................Aboutus section end.................... */
-/* globe componenet styling */
+/* globle component styling */
 span.hdingbtn {
   display: inline-block;
   background: transparent;
@@ -360,7 +359,24 @@ span.hdingbtn {
   font-weight: 600;
   word-spacing: 2px;
   text-indent: 27%;
+  padding-bottom: 3rem;
 }
 .about_hd.main_heading {display: flex;flex-direction: column;align-items: center;}
 .about_hd.main_heading > h2 {text-align: center;text-indent: inherit;}
 .about_hd.main_heading > span {margin-bottom: 2rem;}
+
+.counter_outerline{
+border: 1px solid green;
+padding: 10px;
+border-radius: 8px;
+color: #fff;
+}
+.counter_outerline > span{
+  font-size: 60px;
+}
+.skillCounter_innertext{
+padding-left: 10px;
+}
+/* .skillCounter_innertext > span{
+  display: inline-block;
+} */
